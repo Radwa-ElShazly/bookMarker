@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bookmark your favorite site">
+    <meta name="author" content="Radwa Hassan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container pt-4">
+        <h1 class="text-muted mb-4">Bookmarker</h1>
+        <div class="line "></div>
+        <div class="m-auto mt-5 bg-body-secondary text-center p-4 table-responsive">
+             <div class="title">
+                <h2 class="mb-3">Bookmark your favorite site</h2>
+             </div>
+            <label for="siteName" class="mb-2 fw-bold">Site Name</label>
+            <input id="siteName" class="form-control mb-2" type="text" placeholder="Bookmark Name" >
+
+            <label for="webURL" class="mb-2 fw-bold">Site URL</label>
+            <input id="webURL" class="form-control mb-3" type="text" placeholder="Website URL">
+
+            <button id="addBtn" class="bg-primary text-white border-0 rounded-2 py-2 px-3">submit</button>
+        </div>
+        <div class="sites">
+            <input id="searchInput" onkeyup="search(this.value)" class="form-control m-auto mt-5 mb-3" type="text" placeholder="search by bookmark name">
+
+              <table class="table table-secondary">
+                <tbody id="tbody">
+ 
+                </tbody>
+              </table>   
+            
+        </div>
+
+        <div class="footer mt-4">
+            <div class="line mb-3"></div>
+            <span class="text-muted fw-bold">© developed by RadwaHassan in 2023</span>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
